@@ -10,7 +10,7 @@ from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
 from pystyle import Colors, Colorate
-from carparktool import GalagenTool2
+from carparktool import CarParkTool
 
 __CHANNEL_USERNAME__ = "@GALGENTool"
 __GROUP_USERNAME__   = "@GALGENTool_chat"
