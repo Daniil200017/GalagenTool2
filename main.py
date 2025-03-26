@@ -9,7 +9,6 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from pystyle import Colors, Colorate
 from carparktool import CarParkTool
 
 __CHANNEL_USERNAME__ = "@GALGENTool"
@@ -46,7 +45,7 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text, end=None)
-    console.print("[bold green]♕ GALGENTool[/bold green]: скрипт который поможет вам стать самым крутым.")
+    console.print("[bold green]♕ CarParkingTool[/bold green]: скрипт который поможет вам стать самым крутым.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Вам нужно выйти с игры перед использованием !.", end="\n\n")
@@ -169,13 +168,7 @@ if __name__ == "__main__":
             console.print("[bold][cyan](21):[/cyan] [green]Change Race Loses ~ 800[/green]")
             console.print("[bold][cyan](22):[/cyan] [green]Clone Account ~ 4000[/green]")
             console.print("[bold][cyan](0) :[/cyan] [red]Exit[/red]", end="\n\n")
-
-            console.print("[bold][red]===============[/bold][/red][ 𝙶𝙰𝙻𝙶𝙴𝙽☆ ][bold][red]===============[/red][/bold]")
-
             service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
-
-            console.print("[bold][red]===============[/bold][/red][ 𝙶𝙰𝙻𝙶𝙴𝙽☆ ][bold][red]===============[/red][/bold]")
-
             if service == 0: # Exit
                 console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
             elif service == 1: # Increase Money
