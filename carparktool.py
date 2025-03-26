@@ -7,7 +7,7 @@ from time import sleep
 # Proprietary and confidential
 # Written by Anasov <me@anasov.ly>, 05, May, 2024.
 
-BASE_URL: str = "https://maroon-echidna-796942.hostingersite.com/api"
+BASE_URL: str = "https://darkslategrey-swallow-788802.hostingersite.com/api"
 
 class CarParkTool:
 
